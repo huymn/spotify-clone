@@ -6,10 +6,12 @@ const NavBar = () => {
     const navStyle = {
         backgroundColor: 'black',
         position: 'fixed',
+        top: 0,
         fontStyle: 'Gotham',
         width: '100vw',
         height: '80px',
-        opacity: 0.3
+        opacity: 0.3,
+        zIndex: 1
     }
 
     const logoStyle = {
