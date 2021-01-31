@@ -26,34 +26,43 @@ const NavBar = () => {
 
     const navContentStyle = {
         color:'white',
-        paddingRight: 30,
         fontSize: 15,
         fontWeight: 700
     }
 
     const navContentContainerStyle = {
         position: 'absolute',
+        width: '30vw',
         right: 70,
         top: 15,
         display: 'flex',
+        justifyContent: 'space-between',
         cursor: 'pointer'
     }
 
     const profileIconStyle = {
-        width: 40,
-        height: 40,
+        position: 'relative',
+        right: 10,
+        top: 10,
+        width: 30,
+        height: 30,
     }
 
     return (
-        <div style={navStyle}>
-            <img src={logo} alt="spotify logo" style={logoStyle}/>
-            <div style={navContentContainerStyle}>
-                <p id="prem" style={navContentStyle}>Premium</p>
-                <p id="supp" style={navContentStyle}>Support</p>
-                <p id="download" style={navContentStyle}>Download</p>
-                <p style={navContentStyle}>|</p>
-                <img src={profileIcon} alt='profile icon' style={profileIconStyle}/>
-                <p style={navContentStyle}>Profile v</p>
+        <div>
+            <div style={navStyle}></div>
+            <div style={{position: 'fixed', top: 0, width: '100vw', height: 80, zIndex: 1}}>
+                <img src={logo} alt="spotify logo" style={logoStyle}/>
+                <div style={navContentContainerStyle}>
+                    <p id="prem" style={navContentStyle}>Premium</p>
+                    <p id="supp" style={navContentStyle}>Support</p>
+                    <p id="download" style={navContentStyle}>Download</p>
+                    <p style={navContentStyle}>|</p>
+                    <div style={{display: 'flex'}}>
+                        <img src={profileIcon} alt='profile icon' style={profileIconStyle}/>
+                        <p style={navContentStyle}>Profile ᐯ</p>
+                    </div>
+                </div>
             </div>
         </div>
     )
