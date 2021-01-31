@@ -41,9 +41,8 @@ const NavBar = () => {
     }
 
     const profileIconStyle = {
-        position: 'relative',
-        right: 10,
-        top: 10,
+        paddingTop: 10,
+        paddingRight: 10,
         width: 30,
         height: 30,
     }
