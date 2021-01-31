@@ -9,7 +9,7 @@ const NavBar = () => {
         fontStyle: 'Gotham',
         width: '100vw',
         height: '80px',
-        opacity: 0.5
+        opacity: 0.3
     }
 
     const logoStyle = {
