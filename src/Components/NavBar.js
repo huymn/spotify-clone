@@ -6,9 +6,7 @@ const NavBar = () => {
     const navStyle = {
         backgroundColor: 'black',
         position: 'fixed',
-        top: 0,
-        fontStyle: 'Gotham',
-        width: '100vw',
+        width: '100%',
         height: '80px',
         opacity: 0.3,
         zIndex: 1
@@ -27,7 +25,8 @@ const NavBar = () => {
     const navContentStyle = {
         color:'white',
         fontSize: 15,
-        fontWeight: 700
+        fontWeight: 700,
+        fontFamily: 'Arial'
     }
 
     const navContentContainerStyle = {
@@ -50,7 +49,7 @@ const NavBar = () => {
     return (
         <div>
             <div style={navStyle}></div>
-            <div style={{position: 'fixed', top: 0, width: '100vw', height: 80, zIndex: 1}}>
+            <div style={{position: 'fixed', top: 0, left: 0, width: '100vw', height: 80, zIndex: 1}}>
                 <img src={logo} alt="spotify logo" style={logoStyle}/>
                 <div style={navContentContainerStyle}>
                     <p id="prem" style={navContentStyle}>Premium</p>

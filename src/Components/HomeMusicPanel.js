@@ -9,10 +9,11 @@ import album6 from '../Assets/album6.jpg';
 const HomeMusicPanel = () => {
     const containerStyle = {
         background: 'linear-gradient(90deg, #f542ef, #42cef5)',
-        position: 'absolute',
         display: 'flex',
         alignItems: 'center',
-        width: '100%',
+        justifyContent: 'center',
+        width: '99vw',
+        margin: 0,
         height: 670
     }
 
@@ -42,23 +43,24 @@ const HomeMusicPanel = () => {
 
     const albumStyle = {
         width: 230,
-        height: 230
+        height: 230,
+        padding: 20
     }
 
     return (
         <div style={containerStyle}>
-            <div style={{flex:3, paddingLeft: 30}}>
+            <div style={{paddingLeft: 30}}>
                 <p style={p1Style}>Looking for Music?</p>
                 <p style={p2Style}>Start listening to the best new releases</p>
                 <button style={btnStyle}>Open Web Player</button>
             </div>
-            <div style={{flex:5}}>
-                <div style={{display: 'flex', justifyContent: 'space-around', padding: 20}}>
+            <div style={{}}>
+                <div style={{display: 'flex', justifyContent: 'space-around'}}>
                     <img src={album1} alt="album1" style={albumStyle}/>
                     <img src={album2} alt="album2" style={albumStyle}/>
                     <img src={album3} alt="album3" style={albumStyle}/>
                 </div>
-                <div style={{display: 'flex', justifyContent: 'space-around', paddingLeft: 20, paddingRight: 20}}>
+                <div style={{display: 'flex', justifyContent: 'space-around'}}>
                     <img src={album4} alt="album4" style={albumStyle}/>
                     <img src={album5} alt="album5" style={albumStyle}/>
                     <img src={album6} alt="album6" style={albumStyle}/>
