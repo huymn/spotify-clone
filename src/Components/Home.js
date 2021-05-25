@@ -1,12 +1,14 @@
 import React from 'react';
 import HomeMusicPanel from './HomeMusicPanel';
 import HomePanel2 from './HomePanel2';
+import InfoPanel from './InfoPanel';
 
 const Home = () => {
     return (
-        <div style={{overflow: 'visible'}}>
+        <div>
             <HomeMusicPanel />
             <HomePanel2 />
+            <InfoPanel />
         </div>
     )
 }
