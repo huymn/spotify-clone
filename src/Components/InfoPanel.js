@@ -7,7 +7,7 @@ const InfoPanel = () => {
             width: '100vw',
             height: 540
         }}>
-
+        
         </div>
     );
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../Assets/spotify-logo.png';
 import profileIcon from '../Assets/profile-icon.png';
+import { FaSortDown } from 'react-icons/fa'
 
 const NavBar = () => {
     const navStyle = {
@@ -58,7 +59,7 @@ const NavBar = () => {
                     <p style={navContentStyle}>|</p>
                     <div style={{display: 'flex'}}>
                         <img src={profileIcon} alt='profile icon' style={profileIconStyle}/>
-                        <p style={navContentStyle}>Profile ᐯ</p>
+                        <p style={navContentStyle}>Profile <FaSortDown/></p>
                     </div>
                 </div>
             </div>
