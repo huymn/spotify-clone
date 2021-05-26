@@ -8,7 +8,8 @@ const HomePanel2 = () => {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'flex-start',
-        justifyContent: 'flex-start'
+        justifyContent: 'flex-start',
+        userSelect: 'none'
     }
 
     return (
@@ -18,17 +19,17 @@ const HomePanel2 = () => {
                 <div style={{padding: 20}}>
                     <h2>Manage your account</h2>
                     <p>Edit your profile, change your password, and update your payment information.</p>
-                    <p  style={{color: '#1ee81e'}}>MANAGE YOUR ACCOUNT</p>
+                    <p style={{color: '#1ee81e', cursor: 'pointer'}}>MANAGE YOUR ACCOUNT</p>
                 </div>
                 <div style={{padding: 20}}>
                     <h2>Get our free app</h2>
                     <p>Seamlessly listen to music you love. Download the Spotify app for your computer.</p>
-                    <p  style={{color: '#1ee81e'}}>DOWNLOAD DESKTOP APP</p>
+                    <p  style={{color: '#1ee81e', cursor: 'pointer'}}>DOWNLOAD DESKTOP APP</p>
                 </div>
                 <div style={{padding: 20}}>
                     <h2>Listen on the web</h2>
                     <p>To play and share music without the app, all within your browser, go to play.stotify.com.</p>
-                    <p style={{color: '#1ee81e'}}>OPEN WEB PLAYER</p>
+                    <p style={{color: '#1ee81e', cursor: 'pointer'}}>OPEN WEB PLAYER</p>
                 </div>
             </div>
         </div>
