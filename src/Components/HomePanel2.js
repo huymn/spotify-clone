@@ -9,13 +9,14 @@ const HomePanel2 = () => {
         flexDirection: 'column',
         alignItems: 'flex-start',
         justifyContent: 'flex-start',
-        userSelect: 'none'
+        userSelect: 'none',
+        fontFamily: 'Arial'
     }
 
     return (
         <div style={div1Style}>
             <h1 style={{fontSize: 40, paddingLeft: 70}}>Make the most of Spotify</h1>
-            <div style={{display: 'flex', justifyContent:'center', paddingRight: 50, paddingLeft: 50}}>
+            <div style={{display: 'flex', justifyContent:'center', paddingRight: 50, paddingLeft: 50, fontFamily: 'Arial'}}>
                 <div style={{padding: 20}}>
                     <h2>Manage your account</h2>
                     <p>Edit your profile, change your password, and update your payment information.</p>

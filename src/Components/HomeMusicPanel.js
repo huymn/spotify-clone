@@ -6,9 +6,12 @@ import album4 from '../Assets/album4.jpg';
 import album5 from '../Assets/album5.jpg';
 import album6 from '../Assets/album6.jpg';
 
+const AUTH_URL = "https://accounts.spotify.com/authorize?client_id=d6e018be7f52406b9eb6f98cbd4f9ceb&response_type=code&redirect_url=http://localhost:3000&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%user-read-playback-state%20user-modify-playback-state"
+
 const HomeMusicPanel = () => {
     const containerStyle = {
         background: 'linear-gradient(90deg, #f542ef, #42cef5)',
+        fontFamily: 'Arial',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
@@ -52,7 +55,7 @@ const HomeMusicPanel = () => {
             <div style={{paddingLeft: 30}}>
                 <p style={p1Style}>Looking for Music?</p>
                 <p style={p2Style}>Start listening to the best new releases</p>
-                <button style={btnStyle}>Open Web Player</button>
+                <a style={btnStyle}>Open Web Player</a>
             </div>
             <div style={{}}>
                 <div style={{display: 'flex', justifyContent: 'space-around'}}>

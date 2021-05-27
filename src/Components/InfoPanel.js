@@ -6,7 +6,8 @@ const InfoPanel = () => {
     const listContentStyle = {
         fontSize: 15,
         color: 'white',
-        fontWeight: 500,
+        fontWeight: 600,
+        fontFamily: 'Arial',
         cursor: 'pointer'
     }
 
@@ -23,6 +24,7 @@ const InfoPanel = () => {
         <div style={{
             backgroundColor: 'black',
             width: '100vw',
+            fontFamily: 'Arial',
             height: 500
         }}>
             <div style={{display: 'flex', paddingTop: 70, userSelect: 'none'}}>
