@@ -1,10 +1,14 @@
 import React from 'react';
 import Home from './Components/Home';
 import NavBar from './Components/NavBar';
+import Dashboard from './Components/Dashboard'
+
+const code = new URLSearchParams(window.location.search).get('code');
 
 function App() {
   return (
-    <div className="App" style={{position: 'relative', top: 0, left: 0}}>
+    code ? <Dashboard code={code} /> :
+    <div>
       <NavBar />
       <Home />
     </div>
