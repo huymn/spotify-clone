@@ -6,7 +6,7 @@ import album4 from '../Assets/album4.jpg';
 import album5 from '../Assets/album5.jpg';
 import album6 from '../Assets/album6.jpg';
 
-const AUTH_URL = "https://accounts.spotify.com/authorize?client_id=d6e018be7f52406b9eb6f98cbd4f9ceb&response_type=code&redirect_url=http://localhost:3000&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%user-read-playback-state%20user-modify-playback-state"
+const AUTH_URL = "https://accounts.spotify.com/authorize?client_id=d6e018be7f52406b9eb6f98cbd4f9ceb&response_type=code&redirect_uri=http://localhost:3000&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state"
 
 const HomeMusicPanel = () => {
     const containerStyle = {
@@ -30,7 +30,8 @@ const HomeMusicPanel = () => {
     const p2Style = {
         color: 'white',
         fontWeight: 500,
-        fontSize: 20
+        fontSize: 20,
+        paddingBottom: 10
     }
 
     const btnStyle = {
@@ -55,7 +56,7 @@ const HomeMusicPanel = () => {
             <div style={{paddingLeft: 30}}>
                 <p style={p1Style}>Looking for Music?</p>
                 <p style={p2Style}>Start listening to the best new releases</p>
-                <a style={btnStyle}>Open Web Player</a>
+                <a style={btnStyle} href={AUTH_URL}>Login with Spotify</a>
             </div>
             <div style={{}}>
                 <div style={{display: 'flex', justifyContent: 'space-around'}}>
