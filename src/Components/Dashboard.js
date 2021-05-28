@@ -54,14 +54,23 @@ export default function Dashboard({code}) {
     }, [search, accessToken])
 
     return (
-        <Container className="d-flex flex-column py-2" style={{height: "100vh"}}>
+        <Container style={{height: "90vh"}}
+        >
             <Form.Control
                 type="search"
                 placeholder="Search Songs/Artists"
                 value={search}
                 onChange={e => setSearch(e.target.value)}
+                style={{
+                    height: "5vh",
+                    width: "20vw",
+                    borderRadius: 10,
+                    outline: 'none',
+                    padding: "20px 5px",
+                    fontSize: "3vh"
+                }}
             />
-            <div style={{overflowY: 'auto', height: "80vh"}}>
+            <div style={{overflowY: 'auto', height: "75vh"}}>
                 {searchResults.map(track => 
                     <TrackSearchResult track={track} key={track.uri} chooseTrack={chooseTrack}/>
                 )}
