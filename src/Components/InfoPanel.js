@@ -1,8 +1,15 @@
 import React from 'react';
 import { FaSpotify, FaInstagram, FaTwitter, FaFacebook } from 'react-icons/fa'
 import { onHover, onLeave } from './Functions'
-const InfoPanel = () => {
 
+/**
+ * InfoPanel.js
+ * Author: Huy Nguyen
+ * @returns information panel component at the bottom of the home page
+ */
+
+const InfoPanel = () => {
+    //Style for the list of items
     const listContentStyle = {
         fontSize: 15,
         color: 'white',
@@ -10,7 +17,7 @@ const InfoPanel = () => {
         fontFamily: 'Arial',
         cursor: 'pointer'
     }
-
+    //Style for the icons
     const socialIconsStyle = {
         color: 'white',
         fontSize: 40,

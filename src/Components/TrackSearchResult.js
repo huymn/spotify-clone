@@ -1,6 +1,14 @@
 import React from 'react'
+/**
+ * TrackSearchResults.js
+ * Author: Huy Nguyen
+ * 
+ * @param {track, chooseTrack} param0 
+ * @returns result of the search
+ */
 
 export default function TrackSearchResult({track, chooseTrack}) {
+    //Choose track to play
     function handlePlay() {
         chooseTrack(track);
     }

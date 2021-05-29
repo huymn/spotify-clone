@@ -1,20 +1,24 @@
 import React from 'react';
+/**
+ * HomePanel2.js
+ * Author: Huy Nguyen
+ * 
+ * @returns component that shows information about spotify
+ */
 
 const HomePanel2 = () => {
-    const div1Style = {
-        backgroundColor: 'white',
-        width: '98vw',
-        height: 400,
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'flex-start',
-        justifyContent: 'flex-start',
-        userSelect: 'none',
-        fontFamily: 'Arial'
-    }
-
     return (
-        <div style={div1Style}>
+        <div style={{
+            backgroundColor: 'white',
+            width: '98vw',
+            height: 400,
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'flex-start',
+            justifyContent: 'flex-start',
+            userSelect: 'none',
+            fontFamily: 'Arial'}}
+        >
             <h1 style={{fontSize: 40, paddingLeft: 70}}>Make the most of Spotify</h1>
             <div style={{display: 'flex', justifyContent:'center', paddingRight: 50, paddingLeft: 50, fontFamily: 'Arial'}}>
                 <div style={{padding: 20}}>
