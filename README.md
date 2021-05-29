@@ -14,7 +14,9 @@ Built from scratch web page that allows you to login with you Spotify credential
 
 - Go to http://localhost:3000 on your browser.
 
-- To run the server, have another CLI/Terminal to be in the server directory
+- To run the server, open another CLI/Terminal
+
+- Navigate to the server directory
 
 - Run npm run dev
 
